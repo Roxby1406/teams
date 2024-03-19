@@ -1,0 +1,8 @@
+investiment = float(input("please deposit how much you want"))
+target_value = float(input("please enter how much you want to save"))
+intrest_rate = float(input("please enter your input rate as %")) /100
+years = 0
+while investiment < target_value:
+    investiment*=(1 + intrest_rate) 
+    years += 1 
+print(f"it will take {years} years to grow to {target_value}")
